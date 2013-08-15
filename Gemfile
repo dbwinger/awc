@@ -46,3 +46,5 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_active_shipping', :github => 'spree/spree_active_shipping', :branch => "2-0-stable"
 gem 'active_shipping'
 
+gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
+

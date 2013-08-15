@@ -8,6 +8,15 @@ GIT
       spree_core (~> 2.0.0)
 
 GIT
+  remote: https://github.com/getsentry/raven-ruby.git
+  revision: 7123787ed5d72b022afa8180da40500b5bc6de73
+  specs:
+    sentry-raven (0.6.0)
+      faraday (>= 0.7.6)
+      hashie (>= 1.1.0)
+      uuidtools
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -118,9 +127,12 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
     ffaker (1.18.0)
     gyoku (0.4.6)
       builder (>= 2.1.2)
+    hashie (2.0.5)
     highline (1.6.18)
     hike (1.2.3)
     httparty (0.11.0)
@@ -150,6 +162,7 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.7.9)
     multi_xml (0.5.5)
+    multipart-post (1.2.0)
     nokogiri (1.5.10)
     nori (1.1.5)
     orm_adapter (0.4.0)
@@ -310,6 +323,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)
+  sentry-raven!
   spree (= 2.0.4)
   spree_active_shipping!
   spree_auth_devise!
