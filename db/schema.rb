@@ -11,7 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130814172021) do
+ActiveRecord::Schema.define(:version => 20130815005140) do
+
+  create_table "shipping_methods_zones", :id => false, :force => true do |t|
+    t.integer "shipping_method_id"
+    t.integer "zone_id"
+  end
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -175,13 +180,6 @@ ActiveRecord::Schema.define(:version => 20130814172021) do
     t.text     "details"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  create_table "spree_mail_methods", :force => true do |t|
-    t.string   "environment"
-    t.boolean  "active",      :default => true
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
   end
 
   create_table "spree_new_adjustments", :force => true do |t|
@@ -458,11 +456,7 @@ ActiveRecord::Schema.define(:version => 20130814172021) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "tracking_url"
-  end
-
-  create_table "spree_shipping_methods_zones", :id => false, :force => true do |t|
-    t.integer "shipping_method_id"
-    t.integer "zone_id"
+    t.string   "admin_name"
   end
 
   create_table "spree_shipping_rates", :force => true do |t|
@@ -531,6 +525,7 @@ ActiveRecord::Schema.define(:version => 20130814172021) do
     t.boolean  "active",                 :default => true
     t.boolean  "backorderable_default",  :default => false
     t.boolean  "propagate_all_variants", :default => true
+    t.string   "admin_name"
   end
 
   create_table "spree_stock_movements", :force => true do |t|
