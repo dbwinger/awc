@@ -48,3 +48,7 @@ gem 'active_shipping'
 
 gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
 
+group :production do
+  gem 'newrelic_rpm'
+end
+
