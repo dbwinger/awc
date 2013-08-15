@@ -13,11 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130815005140) do
 
-  create_table "shipping_methods_zones", :id => false, :force => true do |t|
-    t.integer "shipping_method_id"
-    t.integer "zone_id"
-  end
-
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
     t.datetime "expires_at"
@@ -457,6 +452,11 @@ ActiveRecord::Schema.define(:version => 20130815005140) do
     t.datetime "updated_at",   :null => false
     t.string   "tracking_url"
     t.string   "admin_name"
+  end
+
+  create_table "spree_shipping_methods_zones", :id => false, :force => true do |t|
+    t.integer "shipping_method_id"
+    t.integer "zone_id"
   end
 
   create_table "spree_shipping_rates", :force => true do |t|
