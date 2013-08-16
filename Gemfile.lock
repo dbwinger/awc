@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:dbwinger/spree_contact_us.git
+  remote: https://github.com/dbwinger/spree_contact_us.git
   revision: c17e74a8369e7aea207860760f02e7ef0427f414
   branch: 2-0-stable
   specs:
