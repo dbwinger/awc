@@ -1,4 +1,13 @@
 GIT
+  remote: git@github.com:dbwinger/spree_contact_us.git
+  revision: c17e74a8369e7aea207860760f02e7ef0427f414
+  branch: 2-0-stable
+  specs:
+    spree_contact_us (1.1.1)
+      recaptcha
+      spree_core (~> 2.0.4)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -103,9 +112,12 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
     ffaker (1.18.0)
     gyoku (0.4.6)
       builder (>= 2.1.2)
+    hashie (2.0.5)
     highline (1.6.18)
     hike (1.2.3)
     httparty (0.11.0)
@@ -134,6 +146,7 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.7.9)
     multi_xml (0.5.5)
+    multipart-post (1.2.0)
     nokogiri (1.5.10)
     nori (1.1.5)
     orm_adapter (0.4.0)
@@ -180,6 +193,7 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.5)
     ref (1.0.5)
     sass (3.2.10)
     sass-rails (3.2.6)
@@ -197,6 +211,11 @@ GEM
     select2-rails (3.4.8)
       sass-rails
       thor (~> 0.14)
+    sentry-raven (0.4.6)
+      faraday (>= 0.7.6)
+      hashie
+      multi_json (~> 1.0)
+      uuidtools
     spree (2.0.4)
       spree_api (= 2.0.4)
       spree_backend (= 2.0.4)
@@ -288,8 +307,10 @@ DEPENDENCIES
   pg
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)
+  sentry-raven
   spree (= 2.0.4)
   spree_auth_devise!
+  spree_contact_us!
   spree_gateway!
   therubyracer (>= 0.11.4)
   uglifier (>= 1.0.3)
