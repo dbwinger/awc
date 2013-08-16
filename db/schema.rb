@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130815190313) do
+ActiveRecord::Schema.define(:version => 20130816203533) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -177,6 +177,13 @@ ActiveRecord::Schema.define(:version => 20130815190313) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "spree_mail_methods", :force => true do |t|
+    t.string   "environment"
+    t.boolean  "active",      :default => true
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
   create_table "spree_new_adjustments", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -290,16 +297,6 @@ ActiveRecord::Schema.define(:version => 20130815190313) do
     t.integer  "option_type_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
-  end
-
-  create_table "spree_product_packages", :force => true do |t|
-    t.integer  "product_id",                :null => false
-    t.integer  "length",     :default => 0, :null => false
-    t.integer  "width",      :default => 0, :null => false
-    t.integer  "height",     :default => 0, :null => false
-    t.integer  "weight",     :default => 0, :null => false
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
   end
 
   create_table "spree_product_properties", :force => true do |t|
@@ -461,7 +458,6 @@ ActiveRecord::Schema.define(:version => 20130815190313) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "tracking_url"
-    t.string   "admin_name"
   end
 
   create_table "spree_shipping_methods_zones", :id => false, :force => true do |t|
@@ -535,7 +531,6 @@ ActiveRecord::Schema.define(:version => 20130815190313) do
     t.boolean  "active",                 :default => true
     t.boolean  "backorderable_default",  :default => false
     t.boolean  "propagate_all_variants", :default => true
-    t.string   "admin_name"
   end
 
   create_table "spree_stock_movements", :force => true do |t|

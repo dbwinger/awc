@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Awc::Application.load_tasks
+Awc2::Application.load_tasks

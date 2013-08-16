@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Awc
+module Awc2
   class Application < Rails::Application
 
     config.to_prepare do

@@ -30,7 +30,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -38,17 +38,7 @@ gem 'unicorn'
 # To use debugger
 # gem 'debugger'
 
-
 gem 'spree', '2.0.4'
-#gem 'spree', :github => "radar/spree", :branch => "2-0-stable"
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-0-stable'
-gem 'spree_active_shipping', :github => 'spree/spree_active_shipping', :branch => "2-0-stable"
-gem 'active_shipping'
-
-gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
-
-group :production do
-  gem 'newrelic_rpm'
-end
 
