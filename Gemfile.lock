@@ -1,4 +1,18 @@
 GIT
+  remote: https://github.com/dbwinger/monologue.git
+  revision: efb5511504be5dcdfa9acd656bafa7caa98693b4
+  specs:
+    monologue (0.3.0.beta)
+      bcrypt-ruby
+      ckeditor
+      coffee-rails
+      jquery-rails
+      rails (>= 3.1.3)
+      sass-rails (~> 3.2.3)
+      select2-rails
+      truncate_html
+
+GIT
   remote: https://github.com/dbwinger/spree_contact_us.git
   revision: c17e74a8369e7aea207860760f02e7ef0427f414
   branch: 2-0-stable
@@ -83,11 +97,14 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bcrypt-ruby (3.1.1)
+    bcrypt-ruby (3.0.1)
     builder (3.0.4)
     cancan (1.6.10)
     canonical-rails (0.0.3)
       rails (>= 3.1, < 5.0)
+    ckeditor (4.0.4)
+      mime-types
+      orm_adapter
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -99,6 +116,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    columnize (0.3.6)
+    debugger (1.6.0)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.1)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.2)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -109,6 +133,9 @@ GEM
       warden (~> 1.2.1)
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
+    dotenv (0.8.0)
+    dotenv-rails (0.8.0)
+      dotenv (= 0.8.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -302,8 +329,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.0)
+  ckeditor
   coffee-rails (~> 3.2.1)
+  debugger
+  dotenv-rails
   jquery-rails
+  monologue!
+  paperclip
   pg
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)

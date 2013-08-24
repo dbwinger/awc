@@ -35,8 +35,10 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'debugger'
+group :develpment, :test do
+  gem 'debugger'
+  gem 'dotenv-rails'
+end
 
 gem 'spree', '2.0.4'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
@@ -44,4 +46,9 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_contact_us', :git => 'https://github.com/dbwinger/spree_contact_us.git', :branch => '2-0-stable'
 
 gem "sentry-raven"
+
+gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem "ckeditor"
+gem "paperclip"
 
