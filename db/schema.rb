@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130824174648) do
+ActiveRecord::Schema.define(:version => 20130824180221) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -90,14 +90,6 @@ ActiveRecord::Schema.define(:version => 20130824174648) do
   end
 
   add_index "monologue_tags", ["name"], :name => "index_monologue_tags_on_name"
-
-  create_table "monologue_users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"

@@ -35,7 +35,7 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-group :develpment, :test do
+group :development, :test do
   gem 'debugger'
   gem 'dotenv-rails'
 end
