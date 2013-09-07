@@ -34,4 +34,8 @@ Awc2::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # So don't have to restart server during dev of gem
+  #ActiveSupport::Dependencies.autoload_paths << "../spree_serenity_theme/lib"
 end
+

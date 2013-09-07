@@ -8,4 +8,7 @@
 
  *= require_self
  *= require_tree .
+
+ *= require store/spree_serenity_theme
 */
+

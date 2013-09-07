@@ -10,3 +10,6 @@
 //= require store/spree_frontend
 
 //= require_tree .
+//= require store/spree_bootstrap
+//= require store/spree_serenity_theme
+

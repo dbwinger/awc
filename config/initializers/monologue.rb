@@ -1,6 +1,6 @@
-Monologue.site_name            = "This is my blog"
-Monologue.site_subtitle        = "I write about..."
-Monologue.site_url             = "http://example.com"
+Monologue.site_name            = "News"
+Monologue.site_subtitle        = ""
+Monologue.site_url             = "http://www.awcoffees.com/blog"
 #Monologue.disqus_shortname     = "example_disqus_username" # register on disqus.com if you don't have one
 #Monologue.meta_description     = "This is the description that will be seen on Google by default for the main page"
 #Monologue.meta_keyword         = "those, are, meta, key, words, that, you, should, enter, comma, delimited, just, like, this"
@@ -14,9 +14,9 @@ Monologue.site_url             = "http://example.com"
 
 #Monologue.layout               = "layouts/monologue/application" # set the layout you want to use if you want to use your main_app layout
 
-#Monologue.sidebar              = ["latest_posts", "latest_tweets"]   # this will add the latests posts and latests tweets in the right sidebar.
-#Monologue.show_rss_icon        = true # will show the RSS icon (with link) in the header)
-#Monologue.facebook_url         = "https://www.facebook.com/jipiboilycom" # if set, this will enable Facebook icon and link it to your Facebook page.
+Monologue.sidebar              = ["latest_posts", "latest_tweets"]   # this will add the latests posts and latests tweets in the right sidebar.
+Monologue.show_rss_icon        = true # will show the RSS icon (with link) in the header)
+Monologue.facebook_url         = "https://www.facebook.com/dbwinger" # if set, this will enable Facebook icon and link it to your Facebook page.
 #Monologue.google_plus_account_url = "https://plus.google.com/115273180419164295760/posts" # if set, this will enable Google+ icon and link it to that URL.
 #Monologue.linkedin_url         = "http://www.linkedin.com/in/jipiboily" # if set, will enable Linked In icon and link to this URL.
 #Monologue.github_username      = "http://github.com/jipiboily"  # if set, will enable Github icon and link to this URL.

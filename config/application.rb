@@ -78,6 +78,14 @@ module Awc2
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = false
+
+    if Rails.env.development?
+  reload_gems = %w(spree_serenity_theme) # names of gems which should autoreload
+  config.autoload_paths += Gem.loaded_specs.values.inject([]){ |a,gem| a += gem.load_paths if reload_gems.include? gem.name; a }
+  require 'active_support/dependencies'
+  ActiveSupport::Dependencies.explicitly_unloadable_constants += reload_gems.map { |gem| gem.classify }
+end
+
   end
 end
 
