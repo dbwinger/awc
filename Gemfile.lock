@@ -34,6 +34,13 @@ GIT
       spree_core (~> 2.0.4)
 
 GIT
+  remote: https://github.com/dbwinger/spree_serenity_theme.git
+  revision: 76f1b59dfb07c05da1cd2d2d1e36ee627f532ea9
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -54,12 +61,6 @@ GIT
     spree_gateway (2.1.0.beta)
       savon (~> 1.2)
       spree_core (~> 2.0.0)
-
-PATH
-  remote: ../spree_serenity_theme
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/
