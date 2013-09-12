@@ -34,13 +34,6 @@ GIT
       spree_core (~> 2.0.4)
 
 GIT
-  remote: https://github.com/dbwinger/spree_serenity_theme.git
-  revision: bd4b71213532e30d6351c02f361f08fad54fe70d
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
-
-GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -61,6 +54,20 @@ GIT
     spree_gateway (2.1.0.beta)
       savon (~> 1.2)
       spree_core (~> 2.0.0)
+
+GIT
+  remote: https://github.com/spree/spree_static_content.git
+  revision: a9d17d7fe22b29702662f14ecefb4337fbe5d196
+  branch: 2-0-stable
+  specs:
+    spree_static_content (1.1.0.beta)
+      spree_core (~> 2.0.0)
+
+PATH
+  remote: ../spree_serenity_theme
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -370,5 +377,6 @@ DEPENDENCIES
   spree_contact_us!
   spree_gateway!
   spree_serenity_theme!
+  spree_static_content!
   therubyracer (>= 0.11.4)
   uglifier (>= 1.0.3)

@@ -40,6 +40,7 @@ gem 'spree', '2.0.4'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-0-stable'
 gem 'spree_contact_us', :git => 'https://github.com/dbwinger/spree_contact_us.git', :branch => '2-0-stable'
+gem 'spree_static_content', :git => "https://github.com/spree/spree_static_content.git", :branch => '2-0-stable'
 
 gem "sentry-raven"
 
@@ -51,6 +52,6 @@ gem "paperclip"
 gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap', branch: '2-0-stable'
 
 # TODO: Use this once done development on theme
-gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
-#gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+#gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
+gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
