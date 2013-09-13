@@ -34,6 +34,13 @@ GIT
       spree_core (~> 2.0.4)
 
 GIT
+  remote: https://github.com/dbwinger/spree_serenity_theme.git
+  revision: 4247bca11b3fddbedb625d712d18017f6f4cf5bb
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -62,12 +69,6 @@ GIT
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
-
-PATH
-  remote: ../spree_serenity_theme
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -124,6 +125,9 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
+    bootstrap-kaminari-views (0.0.2)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     bootstrap-sass (2.3.1.3)
       sass (~> 3.2)
     builder (3.0.4)
@@ -360,6 +364,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
+  bootstrap-kaminari-views
   ckeditor
   coffee-rails (~> 3.2.1)
   debugger

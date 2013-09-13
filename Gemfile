@@ -50,8 +50,9 @@ gem "ckeditor"
 gem "paperclip"
 
 gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap', branch: '2-0-stable'
+gem 'bootstrap-kaminari-views'
 
 # TODO: Use this once done development on theme
-#gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
-gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
+#gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
