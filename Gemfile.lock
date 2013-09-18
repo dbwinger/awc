@@ -1,4 +1,23 @@
 GIT
+  remote: git://github.com/dbwinger/spree_contact_us.git
+  revision: c17e74a8369e7aea207860760f02e7ef0427f414
+  branch: 2-0-stable
+  specs:
+    spree_contact_us (1.1.1)
+      recaptcha
+      spree_core (~> 2.0.4)
+
+GIT
+  remote: git://github.com/dbwinger/spree_minicart.git
+  revision: 0ca72ffde9dbb2cd8715916e11bbbbc904bae48f
+  specs:
+    spree_minicart (1.1.3)
+      spree_api (~> 2.0)
+      spree_core (~> 2.0)
+      spree_frontend (~> 2.0)
+      spree_sample (~> 2.0)
+
+GIT
   remote: git://github.com/jdutil/spree_bootstrap.git
   revision: 920b86673af19f8761e832ca705c14b7c09da2cb
   branch: 2-0-stable
@@ -9,6 +28,23 @@ GIT
       spree_api
       spree_core (~> 2.0.0)
       spree_frontend
+
+GIT
+  remote: git://github.com/matenia/bootstrap-kaminari-views.git
+  revision: 94e78d1c9af3f6e4f4af36f7c9069bf57f6eef7a
+  specs:
+    bootstrap-kaminari-views (0.0.2)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
+
+GIT
+  remote: git://github.com/spree/spree_editor.git
+  revision: 479453239fcdd472d1346ba11a48b90063831bac
+  specs:
+    spree_editor (2.0.0)
+      ckeditor
+      spree_backend (>= 2.0.0)
+      tinymce-rails (~> 3.5.8.3)
 
 GIT
   remote: https://github.com/dbwinger/monologue.git
@@ -23,22 +59,6 @@ GIT
       sass-rails (~> 3.2.3)
       select2-rails
       truncate_html
-
-GIT
-  remote: https://github.com/dbwinger/spree_contact_us.git
-  revision: c17e74a8369e7aea207860760f02e7ef0427f414
-  branch: 2-0-stable
-  specs:
-    spree_contact_us (1.1.1)
-      recaptcha
-      spree_core (~> 2.0.4)
-
-GIT
-  remote: https://github.com/dbwinger/spree_serenity_theme.git
-  revision: 4247bca11b3fddbedb625d712d18017f6f4cf5bb
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
@@ -69,6 +89,12 @@ GIT
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
+
+PATH
+  remote: ../spree_serenity_theme
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -125,9 +151,6 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
-    bootstrap-kaminari-views (0.0.2)
-      kaminari (>= 0.13)
-      rails (>= 3.1)
     bootstrap-sass (2.3.1.3)
       sass (~> 3.2)
     builder (3.0.4)
@@ -340,6 +363,8 @@ GEM
       ref
     thor (0.18.1)
     tilt (1.4.1)
+    tinymce-rails (3.5.8.3)
+      railties (>= 3.1.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -364,7 +389,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
-  bootstrap-kaminari-views
+  bootstrap-kaminari-views!
   ckeditor
   coffee-rails (~> 3.2.1)
   debugger
@@ -380,7 +405,9 @@ DEPENDENCIES
   spree_auth_devise!
   spree_bootstrap!
   spree_contact_us!
+  spree_editor!
   spree_gateway!
+  spree_minicart!
   spree_serenity_theme!
   spree_static_content!
   therubyracer (>= 0.11.4)

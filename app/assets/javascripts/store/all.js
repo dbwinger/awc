@@ -13,3 +13,4 @@
 //= require store/spree_bootstrap
 //= require store/spree_serenity_theme
 
+//= require store/spree_minicart

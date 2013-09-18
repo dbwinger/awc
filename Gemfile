@@ -36,23 +36,26 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
+# I believe it's important that these 5 be before the theme, and the theme be before spree to override in correct order.
+gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap', branch: '2-0-stable'
+gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
+gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-stable'
+gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
+gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
+
+# TODO: Use this once done development on theme
+#gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
+gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+
 gem 'spree', '2.0.4'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-0-stable'
-gem 'spree_contact_us', :git => 'https://github.com/dbwinger/spree_contact_us.git', :branch => '2-0-stable'
 gem 'spree_static_content', :git => "https://github.com/spree/spree_static_content.git", :branch => '2-0-stable'
+gem 'spree_editor', :github => 'spree/spree_editor'
 
 gem "sentry-raven"
 
-gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
-
-gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap', branch: '2-0-stable'
-gem 'bootstrap-kaminari-views'
-
-# TODO: Use this once done development on theme
-gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
-#gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
