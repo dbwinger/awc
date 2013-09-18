@@ -61,6 +61,13 @@ GIT
       truncate_html
 
 GIT
+  remote: https://github.com/dbwinger/spree_serenity_theme.git
+  revision: 671b13017974dad5ceb92ee8fa57c10712474c6f
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -89,12 +96,6 @@ GIT
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
-
-PATH
-  remote: ../spree_serenity_theme
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/

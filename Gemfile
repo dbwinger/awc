@@ -44,8 +44,8 @@ gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
 gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
 
 # TODO: Use this once done development on theme
-#gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
-gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
+#gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
 gem 'spree', '2.0.4'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
