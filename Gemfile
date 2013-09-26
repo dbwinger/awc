@@ -37,11 +37,11 @@ group :development, :test do
 end
 
 # I believe it's important that these 5 be before the theme, and the theme be before spree to override in correct order.
-gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap', branch: '2-0-stable'
+gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
+gem 'spree_bootstrap', github: 'dbwinger/spree_bootstrap', branch: '2-0-stable'
 gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
 gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-stable'
 gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
-gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
 
 # TODO: Use this once done development on theme
 gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'

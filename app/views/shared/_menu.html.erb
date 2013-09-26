@@ -1,7 +1,8 @@
 <ul class="nav" id="nav">
 	<li>
 	  <%= link_to "Offerings", spree.products_path %>
-		<ul class="nav">
+    <%# TODO: taxons? %>
+		<%#><ul class="nav">
 			<li><a href="index.html">Homepage Default</a></li>
 			<li><a href="index-filterable.html">Homepage Filterable</a></li>
 			<li><a href="index-carousel.html">Slider with Carousel</a></li>
@@ -11,19 +12,19 @@
 			<li><a href="page-left-sidebar.html">Left sidebar</a></li>
 			<li><a href="login.html">Login Page</a></li>
 			<li><a href="checkout.html">Checkout Page</a></li>
-		</ul>
+		</ul>%>
 	</li>
 	<li>
-	  <%= link_to "Blog", monologue.root_path %>
-		<ul class="nav">
+	  <%= link_to "News", monologue.root_path %>
+	  <%# TODO: Latest blog posts? %>
+		<%#><ul class="nav">
 			<li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
 			<li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
 			<li><a href="post-right-sidebar.html">post right sidebar</a></li>
 			<li><a href="post-left-sidebar.html">post left sidebar</a></li>
-		</ul>
+		</ul>%>
 	</li>
 	<%= render :partial => "spree/static_content/static_content_list", :collection => Spree::Page.visible.header_links, :as => :page %>
 	<li><%= link_to "Contact", spree.contact_path %></li>
 </ul>
-</nav>
 

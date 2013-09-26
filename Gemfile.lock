@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/dbwinger/spree_bootstrap.git
+  revision: da449ff243a0741ad64e97ca815e23d5f9092b16
+  branch: 2-0-stable
+  specs:
+    spree_bootstrap (2.0.0)
+      bootstrap-sass (~> 2.3.1.0)
+      font-awesome-rails
+      spree_api
+      spree_core (~> 2.0.0)
+      spree_frontend
+
+GIT
   remote: git://github.com/dbwinger/spree_contact_us.git
   revision: c17e74a8369e7aea207860760f02e7ef0427f414
   branch: 2-0-stable
@@ -16,18 +28,6 @@ GIT
       spree_core (~> 2.0)
       spree_frontend (~> 2.0)
       spree_sample (~> 2.0)
-
-GIT
-  remote: git://github.com/jdutil/spree_bootstrap.git
-  revision: 920b86673af19f8761e832ca705c14b7c09da2cb
-  branch: 2-0-stable
-  specs:
-    spree_bootstrap (2.0.0)
-      bootstrap-sass (~> 2.3.1.0)
-      font-awesome-rails
-      spree_api
-      spree_core (~> 2.0.0)
-      spree_frontend
 
 GIT
   remote: git://github.com/matenia/bootstrap-kaminari-views.git
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/dbwinger/monologue.git
-  revision: efb5511504be5dcdfa9acd656bafa7caa98693b4
+  revision: 0aba8fb20a635ac6b994548e4a2712c21df8dd6e
   specs:
     monologue (0.3.0.beta)
       bcrypt-ruby
@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/dbwinger/spree_serenity_theme.git
-  revision: 294d0320c372069e5e3f3e4f577542ba0cd98f1a
+  revision: 58efd972b1e19369d28124c11507fd6efdf19059
   specs:
     spree_serenity_theme (2.0.4)
       spree_core (~> 2.0.4)
@@ -113,7 +113,7 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    active_utils (2.0.0)
+    active_utils (2.0.1)
       activesupport (>= 2.3.11)
       i18n
     activemerchant (1.38.1)
@@ -158,7 +158,7 @@ GEM
     cancan (1.6.10)
     canonical-rails (0.0.3)
       rails (>= 3.1, < 5.0)
-    ckeditor (4.0.4)
+    ckeditor (4.0.6)
       mime-types
       orm_adapter
     climate_control (0.0.3)
@@ -193,8 +193,7 @@ GEM
     dotenv-rails (0.8.0)
       dotenv (= 0.8.0)
     erubis (2.7.0)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
+    execjs (2.0.1)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     ffaker (1.18.0)
@@ -293,7 +292,7 @@ GEM
       nokogiri (>= 1.4.0)
       nori (~> 1.1.0)
       wasabi (~> 2.5.0)
-    select2-rails (3.4.8)
+    select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
     sentry-raven (0.4.6)
