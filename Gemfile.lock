@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/dbwinger/monologue.git
-  revision: 0aba8fb20a635ac6b994548e4a2712c21df8dd6e
+  revision: 9d9eb06e66abb6192230b896e3242b056f124837
   specs:
     monologue (0.3.0.beta)
       bcrypt-ruby
@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/dbwinger/spree_serenity_theme.git
-  revision: 08d8e230006aa70ea1780e8a56a092dbd40aa306
+  revision: 2dad4cd2b24ba238c4b1fcbb429ef0e15b8cfb46
   specs:
     spree_serenity_theme (2.0.4)
       spree_core (~> 2.0.4)

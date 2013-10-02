@@ -42,6 +42,7 @@ gem 'spree_bootstrap', github: 'dbwinger/spree_bootstrap', branch: '2-0-stable'
 gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
 gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-stable'
 gem "monologue", :git => 'https://github.com/dbwinger/monologue.git'
+#gem "monologue", :path => "../monologue"
 
 # TODO: Use this once done development on theme
 gem 'spree_serenity_theme', :git => 'https://github.com/dbwinger/spree_serenity_theme.git'
