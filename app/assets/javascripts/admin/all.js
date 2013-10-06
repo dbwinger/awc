@@ -12,3 +12,4 @@
 //= require_tree .
 //= require admin/spree_bootstrap
 //= require admin/spree_editor
+//= require admin/spree_flexi_variants

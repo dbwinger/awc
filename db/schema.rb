@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130910185812) do
+ActiveRecord::Schema.define(:version => 20131005232833) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -91,6 +91,11 @@ ActiveRecord::Schema.define(:version => 20130910185812) do
 
   add_index "monologue_tags", ["name"], :name => "index_monologue_tags_on_name"
 
+  create_table "product_customization_types_products", :id => false, :force => true do |t|
+    t.integer "product_customization_type_id"
+    t.integer "product_id"
+  end
+
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
     t.datetime "expires_at"
@@ -105,6 +110,40 @@ ActiveRecord::Schema.define(:version => 20130910185812) do
     t.string   "path"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
+  end
+
+  create_table "spree_ad_hoc_option_types", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "option_type_id"
+    t.string   "price_modifier_type"
+    t.boolean  "is_required",         :default => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.integer  "position",            :default => 0
+  end
+
+  create_table "spree_ad_hoc_option_values", :force => true do |t|
+    t.integer  "ad_hoc_option_type_id"
+    t.integer  "option_value_id"
+    t.decimal  "price_modifier",        :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.datetime "created_at",                                                           :null => false
+    t.datetime "updated_at",                                                           :null => false
+    t.integer  "position"
+    t.boolean  "selected"
+    t.decimal  "cost_price_modifier",   :precision => 8, :scale => 2
+  end
+
+  create_table "spree_ad_hoc_option_values_line_items", :force => true do |t|
+    t.integer  "line_item_id"
+    t.integer  "ad_hoc_option_value_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
+
+  create_table "spree_ad_hoc_variant_exclusions", :force => true do |t|
+    t.integer  "product_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "spree_addresses", :force => true do |t|
@@ -203,6 +242,30 @@ ActiveRecord::Schema.define(:version => 20130910185812) do
     t.string   "gateway_payment_profile_id"
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
+  end
+
+  create_table "spree_customizable_product_options", :force => true do |t|
+    t.integer  "product_customization_type_id"
+    t.integer  "position"
+    t.string   "presentation",                  :null => false
+    t.string   "name",                          :null => false
+    t.string   "description"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "spree_customized_product_options", :force => true do |t|
+    t.integer  "product_customization_id"
+    t.integer  "customizable_product_option_id"
+    t.string   "value"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.string   "customization_image"
+  end
+
+  create_table "spree_excluded_ad_hoc_option_values", :force => true do |t|
+    t.integer "ad_hoc_variant_exclusion_id"
+    t.integer "ad_hoc_option_value_id"
   end
 
   create_table "spree_gateways", :force => true do |t|
@@ -402,6 +465,21 @@ ActiveRecord::Schema.define(:version => 20130910185812) do
     t.integer "variant_id",                               :null => false
     t.decimal "amount",     :precision => 8, :scale => 2
     t.string  "currency"
+  end
+
+  create_table "spree_product_customization_types", :force => true do |t|
+    t.string   "name"
+    t.string   "presentation"
+    t.string   "description"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "spree_product_customizations", :force => true do |t|
+    t.integer  "line_item_id"
+    t.integer  "product_customization_type_id"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "spree_product_option_types", :force => true do |t|
