@@ -247,6 +247,7 @@ GEM
     multi_json (1.8.0)
     multi_xml (0.5.5)
     multipart-post (1.2.0)
+    newrelic_rpm (3.6.2.96)
     nokogiri (1.5.10)
     nori (1.1.5)
     orm_adapter (0.4.0)
@@ -414,6 +415,7 @@ DEPENDENCIES
   jquery-rails
   jquery-validation-rails
   monologue!
+  newrelic_rpm
   paperclip
   pg
   rails (= 3.2.14)
