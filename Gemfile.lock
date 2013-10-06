@@ -1,4 +1,18 @@
 GIT
+  remote: git://github.com/dbwinger/monologue.git
+  revision: 9d9eb06e66abb6192230b896e3242b056f124837
+  specs:
+    monologue (0.3.0.beta)
+      bcrypt-ruby
+      ckeditor
+      coffee-rails
+      jquery-rails
+      rails (>= 3.1.3)
+      sass-rails (~> 3.2.3)
+      select2-rails
+      truncate_html
+
+GIT
   remote: git://github.com/dbwinger/spree_bootstrap.git
   revision: da449ff243a0741ad64e97ca815e23d5f9092b16
   branch: 2-0-stable
@@ -20,6 +34,15 @@ GIT
       spree_core (~> 2.0.4)
 
 GIT
+  remote: git://github.com/dbwinger/spree_flexi_variants.git
+  revision: 1b2e87d1f1ced2329c3ff73501c0f963a8c57a4d
+  specs:
+    spree_flexi_variants (1.0.0)
+      carrierwave
+      mini_magick
+      spree_core (~> 2.0)
+
+GIT
   remote: git://github.com/dbwinger/spree_minicart.git
   revision: 0ca72ffde9dbb2cd8715916e11bbbbc904bae48f
   specs:
@@ -30,12 +53,31 @@ GIT
       spree_sample (~> 2.0)
 
 GIT
+  remote: git://github.com/dbwinger/spree_serenity_theme.git
+  revision: c742799450e01b96015e0c258a6fa502d18236bc
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
+
+GIT
   remote: git://github.com/matenia/bootstrap-kaminari-views.git
   revision: 94e78d1c9af3f6e4f4af36f7c9069bf57f6eef7a
   specs:
     bootstrap-kaminari-views (0.0.2)
       kaminari (>= 0.13)
       rails (>= 3.1)
+
+GIT
+  remote: git://github.com/spree/spree_auth_devise.git
+  revision: b30f87d2caf2bb2cd1ad6c89c1ec6a8601e09fea
+  branch: 2-0-stable
+  specs:
+    spree_auth_devise (2.0.0)
+      devise (~> 2.2.5)
+      devise-encryptable (= 0.1.2)
+      spree_backend (~> 2.0.0)
+      spree_core (~> 2.0.0)
+      spree_frontend (~> 2.0.0)
 
 GIT
   remote: git://github.com/spree/spree_editor.git
@@ -47,51 +89,8 @@ GIT
       tinymce-rails (~> 3.5.8.3)
 
 GIT
-  remote: git@github.com:dbwinger/spree_flexi_variants.git
-  revision: 1b2e87d1f1ced2329c3ff73501c0f963a8c57a4d
-  specs:
-    spree_flexi_variants (1.0.0)
-      carrierwave
-      mini_magick
-      spree_core (~> 2.0)
-
-GIT
-  remote: https://github.com/dbwinger/monologue.git
-  revision: 9d9eb06e66abb6192230b896e3242b056f124837
-  specs:
-    monologue (0.3.0.beta)
-      bcrypt-ruby
-      ckeditor
-      coffee-rails
-      jquery-rails
-      rails (>= 3.1.3)
-      sass-rails (~> 3.2.3)
-      select2-rails
-      truncate_html
-
-GIT
-  remote: https://github.com/dbwinger/spree_serenity_theme.git
-  revision: c742799450e01b96015e0c258a6fa502d18236bc
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
-
-GIT
-  remote: https://github.com/spree/spree_auth_devise.git
-  revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
-  branch: 2-0-stable
-  specs:
-    spree_auth_devise (2.0.0)
-      cancan (~> 1.6.7)
-      devise (~> 2.2.5)
-      devise-encryptable (= 0.1.2)
-      spree_backend (~> 2.0.0)
-      spree_core (~> 2.0.0)
-      spree_frontend (~> 2.0.0)
-
-GIT
-  remote: https://github.com/spree/spree_gateway.git
-  revision: 47b874c8fc554c9d33318df7fcc8d8f0e7e7d6a8
+  remote: git://github.com/spree/spree_gateway.git
+  revision: c12866f39e48eb1259927e6f3bbe964fbe5f2575
   branch: 2-0-stable
   specs:
     spree_gateway (2.1.0.beta)
@@ -99,7 +98,7 @@ GIT
       spree_core (~> 2.0.0)
 
 GIT
-  remote: https://github.com/spree/spree_static_content.git
+  remote: git://github.com/spree/spree_static_content.git
   revision: a9d17d7fe22b29702662f14ecefb4337fbe5d196
   branch: 2-0-stable
   specs:
@@ -195,7 +194,7 @@ GEM
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
-    devise (2.2.6)
+    devise (2.2.7)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
