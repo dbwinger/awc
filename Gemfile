@@ -47,6 +47,7 @@ gem 'spree_static_content', :github => "spree/spree_static_content", :branch => 
 gem 'spree_editor', :github => 'spree/spree_editor'
 
 gem "sentry-raven"
+gem 'newrelic_rpm'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
