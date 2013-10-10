@@ -25,9 +25,6 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-group :assets do
-end
-
 # I believe it's important that these be before the theme, and the theme be before spree to override in correct order.
 gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
 gem 'spree_bootstrap', github: 'dbwinger/spree_bootstrap', branch: '2-0-stable'
