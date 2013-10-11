@@ -53,19 +53,21 @@ GIT
       spree_sample (~> 2.0)
 
 GIT
-  remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: c742799450e01b96015e0c258a6fa502d18236bc
-  specs:
-    spree_serenity_theme (2.0.4)
-      spree_core (~> 2.0.4)
-
-GIT
   remote: git://github.com/matenia/bootstrap-kaminari-views.git
   revision: 94e78d1c9af3f6e4f4af36f7c9069bf57f6eef7a
   specs:
     bootstrap-kaminari-views (0.0.2)
       kaminari (>= 0.13)
       rails (>= 3.1)
+
+GIT
+  remote: git://github.com/spree/spree_active_shipping.git
+  revision: 415a9ea2dcca97426927ad7899b8ab743fa0a469
+  branch: 2-0-stable
+  specs:
+    spree_active_shipping (1.2.0)
+      active_shipping (~> 0.11.0)
+      spree_core (~> 2.0.0)
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
@@ -105,6 +107,12 @@ GIT
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
 
+PATH
+  remote: ../spree_serenity_theme
+  specs:
+    spree_serenity_theme (2.0.4)
+      spree_core (~> 2.0.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -121,6 +129,12 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_shipping (0.11.0)
+      active_utils (>= 1.0.1)
+      activesupport (>= 2.3.5)
+      builder
+      i18n
+      json (>= 1.5.1)
     active_utils (2.0.1)
       activesupport (>= 2.3.11)
       i18n
@@ -422,6 +436,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sentry-raven
   spree (= 2.0.4)
+  spree_active_shipping!
   spree_auth_devise!
   spree_bootstrap!
   spree_contact_us!

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131005232833) do
+ActiveRecord::Schema.define(:version => 20131011005453) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -488,6 +488,16 @@ ActiveRecord::Schema.define(:version => 20131005232833) do
     t.integer  "option_type_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "spree_product_packages", :force => true do |t|
+    t.integer  "product_id",                :null => false
+    t.integer  "length",     :default => 0, :null => false
+    t.integer  "width",      :default => 0, :null => false
+    t.integer  "height",     :default => 0, :null => false
+    t.integer  "weight",     :default => 0, :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "spree_product_properties", :force => true do |t|

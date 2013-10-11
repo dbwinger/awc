@@ -1,0 +1,11 @@
+Spree::ActiveShipping::Config[:origin_country] = "USA"
+Spree::ActiveShipping::Config[:origin_city] = "Muncie"
+Spree::ActiveShipping::Config[:origin_state] = "IN"
+Spree::ActiveShipping::Config[:origin_zip] = "47304"
+Spree::ActiveShipping::Config[:ups_login] = "dbwinger"
+Spree::ActiveShipping::Config[:ups_password] = "awcAWC123"
+Spree::ActiveShipping::Config[:ups_key] = "4CC1776376AA84B6"
+Spree::ActiveShipping::Config[:shipper_number] = "Y8749W"
+Spree::ActiveShipping::Config[:usps_login] = ""
+Spree::ActiveShipping::Config[:handling_fee] = "100"
+
