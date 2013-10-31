@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.0.0"
 
-gem 'rails', '3.2.14'
+gem 'rails', '~> 3.2.15'
 
 gem 'pg'
 
@@ -42,7 +42,7 @@ gem 'spree_flexi_variants', :github=>'dbwinger/spree_flexi_variants'
 gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
 # gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
-gem 'spree', '2.0.5'
+gem 'spree', :github => "dbwinger/spree", :branch => "aws-version" #'2.0.6'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
