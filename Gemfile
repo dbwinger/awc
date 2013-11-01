@@ -4,6 +4,7 @@ ruby "2.0.0"
 gem 'rails', '~> 3.2.15'
 
 gem 'pg'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -49,6 +50,7 @@ gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
 gem 'spree_static_content', :github => "spree/spree_static_content", :branch => '2-0-stable'
 gem 'spree_editor', :github => 'spree/spree_editor'
+gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '2-0-stable-bootstrap'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
