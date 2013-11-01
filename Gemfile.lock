@@ -117,6 +117,13 @@ GIT
       spree_sample (~> 2.0)
 
 GIT
+  remote: git://github.com/dbwinger/spree_serenity_theme.git
+  revision: a545fbaf289aafa7709a3893c5d3a2a3dded499c
+  specs:
+    spree_serenity_theme (2.0.5)
+      spree_core (~> 2.0.5)
+
+GIT
   remote: git://github.com/matenia/bootstrap-kaminari-views.git
   revision: 94e78d1c9af3f6e4f4af36f7c9069bf57f6eef7a
   specs:
@@ -170,12 +177,6 @@ GIT
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
-
-PATH
-  remote: ../spree_serenity_theme
-  specs:
-    spree_serenity_theme (2.0.5)
-      spree_core (~> 2.0.5)
 
 GEM
   remote: https://rubygems.org/
