@@ -417,6 +417,7 @@ GEM
     wasabi (2.5.1)
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
+    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -450,3 +451,4 @@ DEPENDENCIES
   spree_static_content!
   therubyracer (>= 0.11.4)
   uglifier (>= 1.0.3)
+  yui-compressor
