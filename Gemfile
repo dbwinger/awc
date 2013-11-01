@@ -18,6 +18,7 @@ group :assets do
   gem 'jquery-rails'
   # Required by spree_flexi_variants, but for some reason js doesn't seem to be available.
   gem 'jquery-validation-rails'
+  gem 'yui-compressor'
 end
 
 group :development, :test do
