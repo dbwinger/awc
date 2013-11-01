@@ -12,9 +12,10 @@ Awc2::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
-  config.assets.css_compressor = :yui
-  config.assets.js_compressor = :yui
+  # Not compressing for now because it takes over 10 minutes.  Seems might be related to bugs other people found about Capybara or something else causing to reload rails env a bunch of times?
+  config.assets.compress = false
+#  config.assets.css_compressor = :yui
+#  config.assets.js_compressor = :yui
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false

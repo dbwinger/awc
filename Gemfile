@@ -11,14 +11,14 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', '>= 0.11.4'
 
-  gem 'uglifier', '>= 1.0.3'
+  #gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
   # Required by spree_flexi_variants, but for some reason js doesn't seem to be available.
   gem 'jquery-validation-rails'
-  gem 'yui-compressor'
+  # using older version because of errors I think related to https://github.com/nervo/yuicompressor/issues/2
+  # gem 'yui-compressor', '0.11.0'
 end
 
 group :development, :test do
