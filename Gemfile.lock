@@ -119,7 +119,7 @@ GIT
 
 GIT
   remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: 3f3c3b6d31a9b2c25c5416652094a2c60b085c6a
+  revision: aabfb20731006a7364d3df1f23b9ca7ac8a511bb
   specs:
     spree_serenity_theme (2.0.5)
       spree_core (~> 2.0.5)
