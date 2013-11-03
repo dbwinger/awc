@@ -33,11 +33,12 @@ group :production do
 end
 
 # I believe it's important that these be before the theme, and the theme be before spree to override in correct order.
+gem 'spree_social_products', :github => 'spree/spree_social_products', :branch => '2-0-stable'
 gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
 gem 'spree_bootstrap', github: 'dbwinger/spree_bootstrap', branch: '2-0-stable'
 gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
 gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-stable'
-gem 'monologue', :github => 'dbwinger/monologue'
+gem 'monologue', :github => 'dbwinger/monologue', :branch => 'dependencies'
 #gem "monologue", :path => "../monologue"
 gem 'spree_flexi_variants', :github=>'dbwinger/spree_flexi_variants'
 

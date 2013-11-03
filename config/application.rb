@@ -85,7 +85,6 @@ module Awc2
       require 'active_support/dependencies'
       ActiveSupport::Dependencies.explicitly_unloadable_constants += reload_gems.map { |gem| gem.classify }
     end
-
   end
 end
 

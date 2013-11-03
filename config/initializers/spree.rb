@@ -15,5 +15,9 @@ Spree.config do |config|
   config.company = true
 end
 
+Rails.application.config.after_initialize do
+  Spree::Config.facebook_app_id = ENV["FACEBOOK_APP_ID"]
+end
+
 Spree.user_class = "Spree::User"
 

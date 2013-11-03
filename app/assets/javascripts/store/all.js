@@ -17,3 +17,4 @@
 //= require store/spree_flexi_variants
 
 //= require store/spree_address_book
+
