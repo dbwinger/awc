@@ -13,6 +13,7 @@ Spree.config do |config|
   config.track_inventory_levels = false
   config.allow_backorder_shipping = true
   config.company = true
+  config.auto_capture = true
 end
 
 Rails.application.config.after_initialize do
