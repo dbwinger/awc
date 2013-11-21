@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/damianogiacomello/spree_banner.git
+  revision: 79b0bcf94f4662c7ea46b3a7cda9436505356fdd
+  specs:
+    spree_banner (2.0.3)
+      aws-sdk
+      paperclip
+      spree_core (>= 2.0.0)
+
+GIT
   remote: git://github.com/dbwinger/monologue.git
   revision: e0f0d2ab90f47360b8c1e0d7625870a1e169d5a6
   branch: dependencies
@@ -61,13 +70,6 @@ GIT
       spree_core (~> 2.0)
       spree_frontend (~> 2.0)
       spree_sample (~> 2.0)
-
-GIT
-  remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: aabfb20731006a7364d3df1f23b9ca7ac8a511bb
-  specs:
-    spree_serenity_theme (2.0.5)
-      spree_core (~> 2.0.5)
 
 GIT
   remote: git://github.com/matenia/bootstrap-kaminari-views.git
@@ -186,6 +188,12 @@ GIT
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 2.0.0)
+
+PATH
+  remote: ../spree_serenity_theme
+  specs:
+    spree_serenity_theme (2.0.5)
+      spree_core (~> 2.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -462,6 +470,7 @@ DEPENDENCIES
   spree_active_shipping!
   spree_address_book!
   spree_auth_devise!
+  spree_banner!
   spree_bootstrap!
   spree_contact_us!
   spree_editor!
