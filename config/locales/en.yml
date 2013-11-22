@@ -5,4 +5,10 @@ en:
   hello: "Hello world"
   subtract: "Subtract"
   add: "Add"
+  activerecord:
+    attributes:
+      spree/variant:
+        weight: Weight (in oz)
+  spree:
+    weight: Weight (in oz)
 

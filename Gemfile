@@ -41,12 +41,12 @@ gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-
 gem 'monologue', :github => 'dbwinger/monologue', :branch => 'dependencies'
 #gem "monologue", :path => "../monologue"
 # TODO: Submit pull request
-gem 'spree_flexi_variants', :github=>'jsqu99/spree_flexi_variants'
+# gem 'spree_flexi_variants', :github=>'dbwinger/spree_flexi_variants', :branch => "spree-2-0-stable"
 
 # gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
 gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
-gem 'spree', :github => "spree/spree", :branch => "2-0-stable"
+gem 'spree', '2.0.7'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'

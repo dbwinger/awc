@@ -12,6 +12,6 @@
 //= require_tree .
 //= require admin/spree_bootstrap
 //= require admin/spree_editor
-//= require admin/spree_flexi_variants
 //= require admin/spree_social_products
 //= require admin/spree_banner
+

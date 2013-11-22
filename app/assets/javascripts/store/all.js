@@ -14,7 +14,6 @@
 //= require store/spree_serenity_theme
 
 //= require store/spree_minicart
-//= require store/spree_flexi_variants
 
 //= require store/spree_address_book
 
