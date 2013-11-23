@@ -11,5 +11,5 @@ en:
         weight: Weight (in oz)
   spree:
     weight: Weight (in oz)
-    price_multiplier: Price Multiplier
+    price_modifier: Price Modifier
 

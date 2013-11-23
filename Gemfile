@@ -41,7 +41,7 @@ gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-
 gem 'monologue', :github => 'dbwinger/monologue', :branch => 'dependencies'
 #gem "monologue", :path => "../monologue"
 
- gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
+gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
 # gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
 gem 'spree', '2.0.7'
@@ -51,7 +51,7 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-s
 gem 'spree_static_content', :github => "spree/spree_static_content", :branch => '2-0-stable'
 gem 'spree_editor', :github => 'spree/spree_editor'
 gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '2-0-stable-bootstrap'
-gem 'spree_banner', :github => 'damianogiacomello/spree_banner'
+gem 'spree_banner', :github => 'dbwinger/spree_banner'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
