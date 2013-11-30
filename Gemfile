@@ -14,7 +14,7 @@ group :assets do
 
   gem 'therubyracer', '>= 0.11.4'
 
-  #gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
   # Required by spree_flexi_variants, but for some reason js doesn't seem to be available.
   gem 'jquery-validation-rails'
@@ -41,8 +41,8 @@ gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-
 gem 'monologue', :github => 'dbwinger/monologue', :branch => 'dependencies'
 #gem "monologue", :path => "../monologue"
 
-gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
-# gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+# gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
+gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
 gem 'spree', '2.0.7'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
