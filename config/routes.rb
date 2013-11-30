@@ -12,6 +12,6 @@ Awc2::Application.routes.draw do
     # Add INDEX for user order history
     resources :orders, :only => [:index, :show, :update, :edit]
   end
-  mount Monologue::Engine, at: '/blog'
+  mount Monologue::Engine, at: '/news'
 end
 
