@@ -64,7 +64,7 @@ GIT
 
 GIT
   remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: 65ac3bd19542568dc8182775081d7a7b7320aaca
+  revision: 6ce7e3679675b8bc5cef0a9d398599aa0d85018c
   specs:
     spree_serenity_theme (2.0.5)
       spree_core (~> 2.0.5)
@@ -449,7 +449,7 @@ DEPENDENCIES
   newrelic_rpm
   paperclip
   pg
-  rails (~> 3.2.15)
+  rails (= 3.2.15)
   sass-rails (~> 3.2.3)
   sentry-raven
   spree (= 2.0.7)

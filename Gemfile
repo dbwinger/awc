@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.0.0"
 
-gem 'rails', '~> 3.2.15'
+gem 'rails', '3.2.15'
 
 gem 'pg'
 gem 'thin'
@@ -56,4 +56,5 @@ gem 'spree_banner', :github => 'dbwinger/spree_banner'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
+#gem 'i18n', '0.6.5'
 
