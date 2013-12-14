@@ -2,14 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
   subtract: "Subtract"
   add: "Add"
   activerecord:
     attributes:
       spree/variant:
-        weight: Weight (in oz)
+        weight: 'Weight (in oz)'
   spree:
-    weight: Weight (in oz)
-    price_modifier: Price Modifier
+    weight: 'Weight (in oz)'
+    price_modifier: 'Price Modifier'
+    cart: 'Your cart'
 
