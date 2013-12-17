@@ -18,6 +18,7 @@ end
 
 Rails.application.config.after_initialize do
   Spree::Config.facebook_app_id = ENV["FACEBOOK_APP_ID"]
+  Rails.application.config.spree.calculators.shipping_methods << Spree::Calculator::Shipping::FreeShippingCalculator
 end
 
 Spree.user_class = "Spree::User"
