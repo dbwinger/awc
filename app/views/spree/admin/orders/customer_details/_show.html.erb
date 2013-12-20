@@ -1,0 +1,34 @@
+<fieldset class="no-border-bottom">
+  <legend>Customer Details</legend>
+  <div class="row twelve columns">
+    <div class="alpha two columns">
+      Email:
+    </div>
+    <div class="four columns">
+      <%= @order.email %>
+    </div>
+    <div class="two columns">
+      Guest:
+    </div>
+    <div class="omega four columns">
+      <% if @order.completed? %>
+        <%= @order.user.nil? ? Spree.t(:say_yes) : Spree.t(:say_no) %>
+      <%end%>
+    </div>
+  </div>
+
+  <div data-hook="bill_address_wrapper" class="alpha six columns">
+    <fieldset class="no-border-bottom">
+      <legend align="center"><%= Spree.t(:billing_address) %></legend>
+      <%= render "spree/admin/shared/address", :address => @order.bill_address %>
+    </fieldset>
+  </div>
+
+  <div class="omega six columns" data-hook="ship_address_wrapper">
+    <fieldset class="no-border-bottom">
+      <legend align="center"><%= Spree.t(:shipping_address) %></legend>
+      <%= render "spree/admin/shared/address", :address => @order.ship_address %>
+    </fieldset>
+  </div>
+</fieldset>
+
