@@ -7,6 +7,7 @@ Spree::Variant.class_eval do
     option_values.each do |ov|
       self.weight = ov.weight if ov.weight
       self.price = eval("#{self.price} #{ov.price_modifier}") unless (price.nil? || ov.price_modifier.nil?)
+      self.price = self.price.round if ov.round_price
     end
     save
   end

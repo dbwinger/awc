@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131123183025) do
+ActiveRecord::Schema.define(:version => 20131220034337) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -305,10 +305,11 @@ ActiveRecord::Schema.define(:version => 20131123183025) do
     t.string   "name"
     t.string   "presentation"
     t.integer  "option_type_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
     t.integer  "weight"
     t.string   "price_modifier"
+    t.boolean  "round_price",    :default => true
   end
 
   create_table "spree_option_values_variants", :id => false, :force => true do |t|
