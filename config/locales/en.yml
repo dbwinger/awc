@@ -13,6 +13,10 @@ en:
     price_modifier: 'Price Modifier'
     cart: 'Your cart'
     available: 'Available?'
+    shipment_mailer:
+      shipped_email:
+        store_pickup_instructions: 'Your order from Alliance World Coffees is ready to pick up at 5601 W Jackson St, Muncie, IN 47303.'
+        shipment_summary: 'Order Summary'
   monologue:
     admin:
       posts:

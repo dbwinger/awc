@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/dbwinger/spree-reorder.git
+  revision: e74d59ef95e2886e75624e2c6c90144a84cc1565
+  branch: 2-0-stable
+  specs:
+    spree_reorder (0.0.2)
+      spree_frontend (~> 2.0.0)
+
+GIT
   remote: git://github.com/dbwinger/spree_address_book.git
   revision: 50b194bc1de131f4f6e0fa7a1d216ae6eb5ebc90
   branch: 2-0-stable-bootstrap
@@ -49,7 +57,7 @@ GIT
 
 GIT
   remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: 602dce99c17c94110310902a5072f5604ee659be
+  revision: c0e4acba11483be3ff2b1279baa7b523e78b99cf
   specs:
     spree_serenity_theme (2.0.5)
       spree_core (~> 2.0.5)
@@ -463,6 +471,7 @@ DEPENDENCIES
   spree_editor!
   spree_gateway!
   spree_minicart!
+  spree_reorder!
   spree_serenity_theme!
   spree_social_products!
   spree_static_content!

@@ -1,6 +1,6 @@
 <p><%= Spree.t('shipment_mailer.shipped_email.dear_customer') %></p>
 
-<p><%= Spree.t('shipment_mailer.shipped_email.instructions') %>.</p>
+<p><%= Spree.t("shipment_mailer.shipped_email.#{@shipment.order.store_pickup? ? 'store_pickup_' : ''}instructions") %>.</p>
 
 <hr/>
 <h4><%= Spree.t('shipment_mailer.shipped_email.shipment_summary') %></h4>
@@ -10,7 +10,8 @@
   <% end %>
 </p>
 <hr/>
-<%= Spree.t('shipment_mailer.shipped_email.track_information', :tracking => @shipment.tracking)     if @shipment.tracking %><br/>
-<%= Spree.t('shipment_mailer.shipped_email.track_link',        :url      => @shipment.tracking_url) if @shipment.tracking_url %>
+<%= Spree.t('shipment_mailer.shipped_email.track_information', :tracking => @shipment.tracking) if @shipment.tracking %>
+<br/>
+<%= Spree.t('shipment_mailer.shipped_email.track_link', :url => @shipment.tracking_url) if @shipment.tracking_url %>
 <p><%= Spree.t('shipment_mailer.shipped_email.thanks') %></p>
 

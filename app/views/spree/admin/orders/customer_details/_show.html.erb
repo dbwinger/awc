@@ -27,7 +27,12 @@
   <div class="omega six columns" data-hook="ship_address_wrapper">
     <fieldset class="no-border-bottom">
       <legend align="center"><%= Spree.t(:shipping_address) %></legend>
-      <%= render "spree/admin/shared/address", :address => @order.ship_address %>
+      <% if @order.store_pickup? %>
+        In-Store pickup selected.<br/>
+        <strong>Don't ship!</string>
+      <%else%>
+        <%= render "spree/admin/shared/address", :address => @order.ship_address %>
+      <%end%>
     </fieldset>
   </div>
 </fieldset>
