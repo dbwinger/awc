@@ -13,4 +13,22 @@ en:
     price_modifier: 'Price Modifier'
     cart: 'Your cart'
     available: 'Available?'
+  monologue:
+    admin:
+      posts:
+        new:
+          header: 'New Post'
+        create:
+          saved: 'Post created'
+        update:
+          saved: 'Post saved'
+        delete:
+          removed: 'Post removed'
+          fail: 'Failed to remove post'
+  layouts:
+    monologue:
+      admin:
+        nav_bar:
+          add_a_monologue: 'New post'
+          list_monologues: 'List posts'
 
