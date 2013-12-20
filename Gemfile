@@ -25,6 +25,7 @@ end
 group :development, :test do
   gem 'debugger'
   gem 'dotenv-rails'
+  gem 'spring'
 end
 
 group :production do
@@ -38,7 +39,7 @@ gem 'spree_minicart', :github => 'dbwinger/spree_minicart'
 gem 'spree_bootstrap', github: 'dbwinger/spree_bootstrap', branch: '2-0-stable'
 gem 'bootstrap-kaminari-views', github: 'matenia/bootstrap-kaminari-views'
 gem 'spree_contact_us', :github => 'dbwinger/spree_contact_us', :branch => '2-0-stable'
-gem 'monologue', :github => 'dbwinger/monologue', :branch => 'dependencies'
+gem 'monologue', :github => 'jipiboily/monologue', :branch => '0-3-stable'
 #gem "monologue", :path => "../monologue"
 
 gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'

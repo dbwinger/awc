@@ -16,7 +16,7 @@ Monologue.site_url             = "http://www.awcoffees.com/blog"
 
 Monologue.sidebar              = ["latest_posts", "latest_tweets"]   # this will add the latests posts and latests tweets in the right sidebar.
 Monologue.show_rss_icon        = true # will show the RSS icon (with link) in the header)
-Monologue.facebook_url         = "https://www.facebook.com/dbwinger" # if set, this will enable Facebook icon and link it to your Facebook page.
+#Monologue.facebook_url         = "https://www.facebook.com/AllianceWorldCoffees" # if set, this will enable Facebook icon and link it to your Facebook page.
 #Monologue.google_plus_account_url = "https://plus.google.com/115273180419164295760/posts" # if set, this will enable Google+ icon and link it to that URL.
 #Monologue.linkedin_url         = "http://www.linkedin.com/in/jipiboily" # if set, will enable Linked In icon and link to this URL.
 #Monologue.github_username      = "http://github.com/jipiboily"  # if set, will enable Github icon and link to this URL.

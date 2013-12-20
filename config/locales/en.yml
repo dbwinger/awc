@@ -12,4 +12,5 @@ en:
     weight: 'Weight (in oz)'
     price_modifier: 'Price Modifier'
     cart: 'Your cart'
+    available: 'Available?'
 
