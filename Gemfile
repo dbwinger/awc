@@ -58,5 +58,6 @@ gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => '2-0-stable
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
+gem 'htmlentities'
 #gem 'i18n', '0.6.5'
 
