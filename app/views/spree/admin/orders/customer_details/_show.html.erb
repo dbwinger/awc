@@ -8,12 +8,10 @@
       <%= @order.email %>
     </div>
     <div class="two columns">
-      Guest:
+      Name:
     </div>
     <div class="omega four columns">
-      <% if @order.completed? %>
-        <%= @order.user.nil? ? Spree.t(:say_yes) : Spree.t(:say_no) %>
-      <%end%>
+      <%= @order.user.try(:name) %>
     </div>
   </div>
 

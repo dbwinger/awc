@@ -1,0 +1,59 @@
+<h2>A new order has been received:</h2>
+<hr/>
+<h3><%= Spree.t('order_mailer.confirm_email.order_summary') %></h3>
+<table>
+  <thead>
+    <td>SKU</td>
+    <td>Product</td>
+    <td>Options</td>
+    <td>Price</td>
+    <td>Quantity</td>
+    <td>Total</td>
+  </thead>
+<% @order.line_items.each do |item| %>
+  <tr>
+    <td><%= item.variant.sku %></td>
+    <td><%= raw(item.variant.product.name) %></td>
+    <td><%= raw(item.variant.options_text) -%></td>
+    <td><%= item.single_money %></td>
+    <td style="text-align:center"><%=item.quantity%></td>
+    <td><%= item.display_amount %></td>
+  <tr>
+<% end %>
+</table>
+<hr/>
+<%= Spree.t('order_mailer.confirm_email.subtotal', :subtotal => @order.display_item_total) %>
+<br/>
+<% @order.adjustments.eligible.each do |adjustment| %>
+  <%= raw(adjustment.label) %>: <%= adjustment.display_amount %>
+<% end %>
+<br/>
+<strong><%= Spree.t('order_mailer.confirm_email.total', :total => @order.display_total) %></strong>
+<hr/>
+<h3>Customer Info</h3>
+<table>
+  <tr>
+    <td>Name:</td>
+    <td><%= @order.user.try(:name) %></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td><%= @order.email %></td>
+  </tr>
+  <tr>
+    <td>Ship Address:</td>
+    <td>
+      <% if @order.store_pickup? %>
+        In-Store pickup selected.<br/>
+        <strong>Don't ship!</string>
+      <%else%>
+        <%= render "spree/admin/shared/address", :address => @order.ship_address %>
+      <%end%>
+    </td>
+  </tr>
+  <tr>
+    <td>Payment Status:</td>
+    <td><%= @order.payment_state.try(:humanize) %></td>
+  </tr>
+</table>
+

@@ -24,5 +24,15 @@ Spree::Order.class_eval do
 
     @available_payment_methods = @available_payment_methods.available(:front_end)
   end
+
+  def deliver_order_confirmation_email
+    begin
+      Spree::OrderMailer.confirm_email(self.id).deliver
+      Spree::OrderMailer.received_email(self.id).deliver
+    rescue Exception => e
+      logger.error("#{e.class.name}: #{e.message}")
+      logger.error(e.backtrace * "\n")
+    end
+  end
 end
 
