@@ -10,7 +10,9 @@ Awc2::Application.routes.draw do
   mount Spree::Core::Engine, :at => '/'
   Spree::Core::Engine.routes.prepend do
     # Add INDEX for user order history
-    resources :orders, :only => [:index, :show, :update, :edit]
+    resources :orders, :only => [:index, :show, :update, :edit] do
+      collection { post :import }
+    end
   end
   mount Monologue::Engine, at: '/news'
 end

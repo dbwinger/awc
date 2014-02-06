@@ -16,8 +16,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
-  # Required by spree_flexi_variants, but for some reason js doesn't seem to be available.
-  gem 'jquery-validation-rails'
   # using older version because of errors I think related to https://github.com/nervo/yuicompressor/issues/2
   # gem 'yui-compressor', '0.11.0'
 end
@@ -25,6 +23,8 @@ end
 group :development, :test do
   gem 'debugger'
   gem 'dotenv-rails'
+  gem 'spring'
+  gem 'letter_opener'
   gem 'spring'
 end
 
@@ -43,7 +43,7 @@ gem 'monologue', :github => 'jipiboily/monologue', :branch => '0-3-stable'
 #gem "monologue", :path => "../monologue"
 
 gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
-# gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
+#gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
 gem 'spree', '2.0.7'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
@@ -59,5 +59,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
 gem 'htmlentities'
+
 #gem 'i18n', '0.6.5'
 
