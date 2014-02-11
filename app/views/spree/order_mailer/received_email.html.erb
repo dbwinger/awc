@@ -14,7 +14,7 @@
   <tr>
     <td><%= item.variant.sku %></td>
     <td><%= raw(item.variant.product.name) %></td>
-    <td><%= raw(item.variant.options_text) -%></td>
+    <td><%= raw(item.variant.options_text.sub! 'Ground', "<span style='text-decoration:underline;font-weight:bold;text-transform:uppercase'>Ground</span>") -%></td>
     <td><%= item.single_money %></td>
     <td style="text-align:center"><%=item.quantity%></td>
     <td><%= item.display_amount %></td>

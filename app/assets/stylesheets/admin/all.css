@@ -12,3 +12,10 @@
  *= require admin/spree_editor
  *= require admin/spree_social_products
 */
+
+.ground {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+

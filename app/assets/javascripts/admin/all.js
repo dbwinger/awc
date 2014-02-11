@@ -15,3 +15,9 @@
 //= require admin/spree_social_products
 //= require admin/spree_banner
 
+$(function() {
+  $(".item-name:contains('Ground')").each(function() {
+    $(this).html($(this).text().replace('Ground',"<span class='ground'>Ground</span>"));
+  })
+})
+
