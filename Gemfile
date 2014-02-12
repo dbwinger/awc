@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.0.0"
 
-gem 'rails', '3.2.15'
+gem 'rails', '3.2.16'
 
 gem 'pg'
 gem 'thin'
@@ -25,7 +25,6 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'spring'
   gem 'letter_opener'
-  gem 'spring'
 end
 
 group :production do
@@ -45,12 +44,12 @@ gem 'monologue', :github => 'jipiboily/monologue', :branch => '0-3-stable'
 gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
 #gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
-gem 'spree', '2.0.7'
+gem 'spree', '2.0.8'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
 gem 'spree_static_content', :github => "spree/spree_static_content", :branch => '2-0-stable'
-gem 'spree_editor', :github => 'spree/spree_editor'
+gem 'spree_editor', :github => 'spree/spree_editor', :branch => '2-0-stable'
 gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '2-0-stable-bootstrap'
 gem 'spree_banner', :github => 'dbwinger/spree_banner'
 gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => '2-0-stable'

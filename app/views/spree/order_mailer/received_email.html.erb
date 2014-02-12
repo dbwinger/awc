@@ -51,6 +51,12 @@
       <%end%>
     </td>
   </tr>
+  <% unless @order.special_instructions.blank? %>
+    <tr>
+      <td>Comments/Instructions:</td>
+      <td><%= @order.special_instructions %></td>
+    </tr>
+  <% end %>
   <tr>
     <td>Payment Status:</td>
     <td><%= @order.payment_state.try(:humanize) %></td>
