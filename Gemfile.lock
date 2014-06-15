@@ -57,10 +57,9 @@ GIT
 
 GIT
   remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: 99060e864643a2ba521d00c7749d775f92f12a9b
+  revision: 9ef5ed9626247bfc0bf0b40c59032a6b02a51fc2
   specs:
     spree_serenity_theme (2.0.5)
-      spree_core (~> 2.0.5)
 
 GIT
   remote: git://github.com/jipiboily/monologue.git
