@@ -52,7 +52,7 @@ gem 'spree_static_content', :github => "spree/spree_static_content", :branch => 
 gem 'spree_editor', :github => 'spree/spree_editor', :branch => '2-0-stable'
 gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '2-0-stable-bootstrap'
 gem 'spree_banner', :github => 'dbwinger/spree_banner'
-gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => 'current_order-hash'
+gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => '2-0-stable'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"

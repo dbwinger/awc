@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/dbwinger/spree-reorder.git
-  revision: 4a3a1a259eb604c9844af2f847115a86d159da2d
-  branch: current_order-hash
+  revision: 70a7a8a1dd6b2ec635a296f63f6083c8cebaa237
+  branch: 2-0-stable
   specs:
     spree_reorder (0.0.2)
       spree_frontend (~> 2.0.0)
