@@ -6,7 +6,7 @@ module ApplicationHelper
       variant = ov.product_variant_with_default_other_options(@product.id, option_type.name)
       [ "#{ov.presentation} #{variant_price variant}", ov.id ] if variant
     end
-    options_for_select(dropdown_options)
+    options_for_select(dropdown_options.compact)
   end
 end
 

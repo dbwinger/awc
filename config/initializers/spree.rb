@@ -24,3 +24,6 @@ end
 
 Spree.user_class = "Spree::User"
 
+Spree::AppConfiguration.class_eval do
+  preference :default_coffee_weight, :integer, default: ENV['DEFAULT_COFFEE_WEIGHT'] || 12
+end

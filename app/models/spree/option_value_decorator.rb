@@ -4,12 +4,21 @@ Spree::OptionValue.class_eval do
   def product_variant_with_default_other_options product_id, option_type_name
     # If not weight type, use the default weight so price changes are accurate.
     if option_type_name.downcase == 'grind'
-      v = variants.where(:product_id => product_id, :weight => 16)
+      v = variants.where(:product_id => product_id, :weight => Spree::Config.default_coffee_weight)
     # If weight dropdown, use variant with whole bean so it doesn't add to the price
     elsif option_type_name.downcase == 'weight'
-      v = Spree::Variant.where(:product_id => product_id).where("EXISTS (SELECT * FROM spree_option_values_variants WHERE variant_id = spree_variants.id AND option_value_id = #{self.id}) AND EXISTS (SELECT * FROM spree_option_values_variants WHERE variant_id = spree_variants.id AND option_value_id = (SELECT id FROM spree_option_values WHERE name ILIKE 'whole bean'))")
+      v = Spree::Variant.where(:product_id => product_id).where(
+        "EXISTS (" + 
+          "SELECT * FROM spree_option_values_variants " +
+          "WHERE variant_id = spree_variants.id " + 
+            "AND option_value_id = #{self.id}" + 
+        ") AND EXISTS (" +
+          "SELECT * FROM spree_option_values_variants " +
+          "WHERE variant_id = spree_variants.id " +
+            "AND option_value_id = (SELECT id FROM spree_option_values WHERE name ILIKE 'whole bean' LIMIT 1)" +
+        ")"
+      )
     end
     v.first
   end
 end
-
