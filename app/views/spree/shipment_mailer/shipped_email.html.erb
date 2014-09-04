@@ -1,4 +1,4 @@
-<p><%= Spree.t('shipment_mailer.shipped_email.dear_customer') %></p>
+<p><%= Spree.t('shipment_mailer.shipped_email.dear_customer', name: @shipment.address.firstname) %></p>
 
 <p><%= Spree.t("shipment_mailer.shipped_email.#{@shipment.order.store_pickup? ? 'store_pickup_' : ''}instructions") %>.</p>
 

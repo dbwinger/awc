@@ -18,7 +18,11 @@ en:
         store_pickup_instructions: 'Your order from Alliance World Coffees is ready to pick up at 5601 W Jackson St, Muncie, IN 47303'
         shipment_summary: 'Order Summary'
         store_pickup_subject: 'Order Ready for Pickup'
+        dear_customer: 'Dear %{name},'
     shipping_instructions: 'Special Instructions or Comments:'
+    order_mailer:
+      confirm_email:
+        dear_customer: 'Dear %{name},'
   monologue:
     admin:
       posts:
