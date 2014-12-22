@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+ruby "2.1.2"
 
-gem 'rails', '3.2.18'
+gem 'rails', '3.2.21'
 
 gem 'pg'
 gem 'thin'
@@ -21,7 +21,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug'
   gem 'dotenv-rails'
   gem 'spring'
   gem 'letter_opener'
@@ -58,6 +58,3 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
 gem 'htmlentities'
-
-#gem 'i18n', '0.6.5'
-
