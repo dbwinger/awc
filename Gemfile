@@ -44,7 +44,7 @@ gem 'monologue', :github => 'jipiboily/monologue', :branch => '0-3-stable'
 gem 'spree_serenity_theme', :github => 'dbwinger/spree_serenity_theme'
 #gem 'spree_serenity_theme', :path => "../spree_serenity_theme"
 
-gem 'spree', '2.0.11'
+gem 'spree', '~> 2.0.13'
 gem 'spree_active_shipping', :github => "spree/spree_active_shipping", :branch => '2-0-stable'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
