@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140212031514) do
+ActiveRecord::Schema.define(:version => 20150608213117) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -340,6 +340,7 @@ ActiveRecord::Schema.define(:version => 20140212031514) do
     t.string   "last_ip_address"
     t.integer  "created_by_id"
     t.string   "channel",                                                           :default => "spree"
+    t.string   "po_number"
   end
 
   add_index "spree_orders", ["completed_at"], :name => "index_spree_orders_on_completed_at"

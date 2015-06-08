@@ -4,6 +4,9 @@
 
 <hr/>
 <h4><%= Spree.t('shipment_mailer.shipped_email.shipment_summary') %></h4>
+<% if @order.po_number.present? %>
+  <p><strong>PO #: </strong><%= @order.po_number %></p>
+<% end -%>
 <p>
   <% @shipment.manifest.each do |item| %>
     <%= item.variant.sku %> <%= item.variant.product.name %> <%= item.variant.options_text %><br/>

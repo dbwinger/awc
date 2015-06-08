@@ -2,6 +2,9 @@
 <p><%= Spree.t('order_mailer.confirm_email.instructions') %></p>
 <hr/>
 <h3><%= Spree.t('order_mailer.confirm_email.order_summary') %></h3>
+<% if @order.po_number.present? %>
+  <p><strong>PO #: </strong><%= @order.po_number %></p>
+<% end -%>
 <table>
   <thead>
     <td>SKU</td>

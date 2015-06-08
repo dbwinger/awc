@@ -1,4 +1,6 @@
 Spree::Order.class_eval do
+  attr_accessible :po_number
+
   def store_pickup?
     # Check if all shipments are in-store pickup.
     shipments.each do |shipment|
