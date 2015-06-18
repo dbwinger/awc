@@ -335,7 +335,7 @@ GEM
       json (~> 1.4)
     recaptcha (0.3.6)
     ref (1.0.5)
-    sass (3.4.11)
+    sass (3.2.19)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -450,6 +450,7 @@ DEPENDENCIES
   pg
   rails (~> 3.2.21)
   rails_12factor
+  sass (~> 3.2.13)
   sass-rails (~> 3.2.3)
   sentry-raven
   spree (~> 2.0.13)
