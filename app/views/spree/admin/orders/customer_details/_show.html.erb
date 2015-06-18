@@ -1,17 +1,14 @@
 <fieldset class="no-border-bottom">
   <legend>Customer Details</legend>
   <div class="row twelve columns">
-    <div class="alpha two columns">
-      Email:
+    <div class="alpha four columns">
+      Name: <%= @order.user.try(:name) %>
     </div>
     <div class="four columns">
-      <%= @order.email %>
-    </div>
-    <div class="two columns">
-      Name:
+      Email: <%= @order.email %>
     </div>
     <div class="omega four columns">
-      <%= @order.user.try(:name) %>
+      PO #: <%= @order.po_number %>      
     </div>
   </div>
 
@@ -34,4 +31,3 @@
     </fieldset>
   </div>
 </fieldset>
-
