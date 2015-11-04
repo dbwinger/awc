@@ -55,6 +55,8 @@ gem 'spree_editor', :github => 'spree/spree_editor', :branch => '2-0-stable'
 gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '2-0-stable-bootstrap'
 gem 'spree_banner', :github => 'dbwinger/spree_banner'
 gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => '2-0-stable'
+gem 'spree_paypal_website_standard', github: 'dbwinger/spree-pp-website-standard', branch: '2-0-stable'
+#gem 'spree_paypal_website_standard', path: '../spree-pp-website-standard'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"

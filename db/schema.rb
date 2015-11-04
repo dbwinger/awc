@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150608213117) do
+ActiveRecord::Schema.define(:version => 20151104013122) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -377,6 +377,15 @@ ActiveRecord::Schema.define(:version => 20150608213117) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "display_on"
+  end
+
+  create_table "spree_payment_notifications", :force => true do |t|
+    t.text     "params"
+    t.string   "status"
+    t.string   "transaction_id"
+    t.integer  "order_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "spree_payments", :force => true do |t|

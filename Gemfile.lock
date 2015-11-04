@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/dbwinger/spree-pp-website-standard.git
+  revision: ee7e0be884f9e2b25208e47a840e16f3bc54178f
+  branch: 2-0-stable
+  specs:
+    spree_paypal_website_standard (2.0.0)
+      spree_core (~> 2.0.0)
+
+GIT
   remote: git://github.com/dbwinger/spree-reorder.git
   revision: 70a7a8a1dd6b2ec635a296f63f6083c8cebaa237
   branch: 2-0-stable
@@ -463,6 +471,7 @@ DEPENDENCIES
   spree_editor!
   spree_gateway!
   spree_minicart!
+  spree_paypal_website_standard!
   spree_reorder!
   spree_serenity_theme!
   spree_social_products!
