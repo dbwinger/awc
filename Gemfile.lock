@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dbwinger/spree-pp-website-standard.git
-  revision: 9dabffc1022fecf210ebb7987cca792ea7a7de32
+  revision: 3cc13dcb2181ed581be257e18e595bea44619217
   branch: 2-0-stable
   specs:
     spree_paypal_website_standard (2.0.0)
