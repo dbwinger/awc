@@ -14,10 +14,10 @@
 //= require admin/spree_editor
 //= require admin/spree_social_products
 //= require admin/spree_banner
+//= require admin/spree_paypal_express
 
 $(function() {
   $(".item-name:contains('Ground')").each(function() {
     $(this).html($(this).text().replace('Ground',"<span class='ground'>Ground</span>"));
   })
 })
-
