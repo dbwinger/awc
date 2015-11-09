@@ -17,3 +17,9 @@
 
 //= require store/spree_address_book
 
+//= require store/spree_paypal_express
+
+$(document).on('click', '#checkout_form_payment input[type=submit]', function() {
+  event.preventDefault();
+  $('a#paypal_button img').click();
+});

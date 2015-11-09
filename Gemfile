@@ -56,6 +56,8 @@ gem 'spree_address_book', :github => 'dbwinger/spree_address_book', :branch => '
 gem 'spree_banner', :github => 'dbwinger/spree_banner'
 gem 'spree_reorder', :github => 'dbwinger/spree-reorder', :branch => '2-0-stable'
 
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-0-stable'
+
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "ckeditor"
 gem "paperclip"
