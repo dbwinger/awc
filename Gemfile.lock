@@ -57,7 +57,7 @@ GIT
 
 GIT
   remote: git://github.com/dbwinger/spree_serenity_theme.git
-  revision: 3ebcc4b0e27872b8a5fc35f41295b02d9c550880
+  revision: 389b7766a0239ccbd275d5c4eeef0585cc97636b
   specs:
     spree_serenity_theme (2.0.5)
 
